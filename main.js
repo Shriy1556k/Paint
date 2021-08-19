@@ -3,7 +3,7 @@ var ctx=canvas.getContext("2d");
 var color="black";
 var radius=20;
 var width_line=2;
-canvas.addEventListener("mousedown", my_mousedown)
+canvas.addEventListener("mousedown", my_mousedown);
 function my_mousedown(e)
 {
     color=document.getElementById("color").value;
@@ -33,8 +33,7 @@ function my_mouseup(e)
 {
     mouseEvent="mouseUp";
 }
-canvas.addEventListener("mouseleave", my_mouseleave)
-function my_mouseleave(e)
+canvas.addEventListener("mouseleave", my_mouseleave);
 {
     mouseEvent="mouseLeave"
 }
